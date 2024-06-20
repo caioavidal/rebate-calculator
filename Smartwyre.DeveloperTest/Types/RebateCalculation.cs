@@ -2,9 +2,7 @@
 
 public class RebateCalculation
 {
-    public int Id { get; set; }
-    public string Identifier { get; set; }
-    public string RebateIdentifier { get; set; }
-    public IncentiveType IncentiveType { get; set; }
-    public decimal Amount { get; set; }
+    public Rebate Rebate { get; init; }
+    public Product Product { get; init; }
+    public decimal Volume { get; init; }
 }
